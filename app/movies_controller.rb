@@ -22,7 +22,7 @@ def can_be_created_with_a_hash_of_attributes
   }
   if movie = Movie.new(attributes)
     true
-    movie.save
+    #movie.save
   else
     false
   end
