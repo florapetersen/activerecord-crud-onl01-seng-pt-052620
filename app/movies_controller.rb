@@ -21,7 +21,11 @@ def can_be_created_with_a_hash_of_attributes
       in_theaters: false
   }
   if movie = Movie.new(attributes)
-    return true 
+    true
+    movie.save
+  else
+    false
+  end
   #movie.save
 end
 
